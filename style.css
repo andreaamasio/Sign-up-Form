@@ -1,0 +1,75 @@
+:root {
+    --brand-color:;
+}
+@font-face {
+    font-family: Quicksand;
+    src: url(./assets/Quicksand/Quicksand-VariableFont_wght.woff2);
+}
+body {
+    margin:0;
+    padding: 0;
+}
+
+
+.big-container {    
+    display: flex;
+}
+
+.image img{
+    max-width: 375px;
+    max-height: 100vh;
+}
+.logo {
+    position: absolute;
+    width: 345px;
+    top: 30%;
+    text-align: center;
+    font-size: 5rem;    
+    opacity: 0.6;
+    background: lightblue;
+    font-family: Quicksand, sans-serif;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main  {
+    padding-right: 20%;
+    padding-left: 7%;
+}
+legend {
+    border: 1px solid green;
+    width: 100%
+}
+.form form{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 700px;
+
+}
+.form p{
+    max-width: 240px;
+    
+}
+.form label {
+    border: 1px solid green;
+    min-width: 90px;
+}
+
+.header, form legend {
+    font-family: Quicksand, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.header p:first-child{
+     padding-top: 15%;
+     
+}
+label {
+    font-family: Quicksand, sans-serif;
+    text-transform: uppercase;
+}
