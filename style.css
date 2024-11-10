@@ -8,20 +8,24 @@
 body {
     margin:0;
     padding: 0;
+    box-sizing: content-box;
 }
 
 
 .big-container {    
     display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    box-sizing: content-box;
 }
 
 .image img{
-    max-width: 375px;
+    max-width: 37vw;
     max-height: 100vh;
 }
 .logo {
     position: absolute;
-    width: 345px;
+    max-width: 37vw;
     top: 30%;
     text-align: center;
     font-size: 5rem;    
@@ -33,43 +37,82 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    background: rgb(228, 242, 247);
 }
-.main  {
+.header, .form form, .footer {
     padding-right: 20%;
     padding-left: 7%;
+    
 }
 legend {
-    border: 1px solid green;
+    padding-bottom: 2%;
     width: 100%
 }
-.form form{
-    border: 1px solid red;
+.form{
+    background: white;
+    padding: 0;
+    margin: 0;
+}
+.form form{    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 700px;
+    max-width: 500px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 
 }
-.form p{
-    max-width: 240px;
+.form div{
+    width: 240px;
     
 }
-.form label {
-    border: 1px solid green;
-    min-width: 90px;
+.form label, .form input {
+    
+    min-width: 200px;
 }
 
-.header, form legend {
+.header, form legend{
     font-family: Quicksand, sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
 .header p:first-child{
-     padding-top: 15%;
+     padding-top: 12%;
      
 }
 label {
     font-family: Quicksand, sans-serif;
+    font-weight: 500;
     text-transform: uppercase;
 }
+
+.footer button{
+    margin-top: 8%;
+    margin-bottom: 5%;
+    font-family: Quicksand, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    width: 250px;
+    height: 50px; 
+    background-color: rgb(192, 226, 238) ;
+    border-radius: 25px;
+    
+    border: 0;
+}
+.footer div{
+    font-family: Quicksand, sans-serif;
+}
+/* @media (max-width: 600px) {
+    .big-container {    
+        display: block;
+    }
+    .image {
+        max-width: 100%;
+    }
+    .image img{
+        max-width: 100%;
+        height: auto;
+    }
+  } */
